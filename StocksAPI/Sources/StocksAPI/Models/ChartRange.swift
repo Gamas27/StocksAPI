@@ -8,6 +8,7 @@
 import Foundation
 
 public enum ChartRange: String, CaseIterable {
+    
     case oneDay = "1d"
     case oneWeek = "5d"
     case oneMonth = "1mo"
@@ -15,7 +16,7 @@ public enum ChartRange: String, CaseIterable {
     case sixMonth = "6mo"
     case ytd
     case oneYear = "1y"
-    case twoyear = "2y"
+    case twoYear = "2y"
     case fiveYear = "5y"
     case tenYear = "10y"
     case max
@@ -25,9 +26,10 @@ public enum ChartRange: String, CaseIterable {
         case .oneDay: return "1m"
         case .oneWeek: return "5m"
         case .oneMonth: return "90m"
-        case .threeMonth, .sixMonth, .ytd, .oneYear, .twoyear: return "1d"
+        case .threeMonth, .sixMonth, .ytd, .oneYear, .twoYear: return "1d"
         case .fiveYear, .tenYear: return "1wk"
         case .max: return "3mo"
         }
     }
 }
+
